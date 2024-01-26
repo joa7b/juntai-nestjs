@@ -1,73 +1,40 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# juntai-nestjs
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Descrição
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+A Juntai API é uma aplicação robusta construída com Node.js, utilizando o framework NestJS. O banco de dados é gerenciado por MySQL, com Sequelize atuando como ORM. A arquitetura segue os princípios da Clean Architecture, proporcionando escalabilidade e organização modular do código. Testes automatizados, implementados com Jest, garantem a estabilidade e confiabilidade do sistema. A autenticação JWT (JSON Web Token) é adotada para controlar o acesso às rotas privadas da API.
 
-## Description
+## Tecnologias Utilizadas
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- **Node.js**
+- **NestJS**
+- **MySQL**
+- **Sequelize**
 
-## Installation
+## Princípios de Clean Architecture
 
-```bash
-$ npm install
-```
+A estrutura da Juntai API adere aos princípios da Clean Architecture, promovendo uma organização clara e modular do código. Essa abordagem facilita a manutenção e evolução do sistema ao longo do tempo, contribuindo para um desenvolvimento mais sustentável.
 
-## Running the app
+## Testes Automatizados com Jest
 
-```bash
-# development
-$ npm run start
+A estabilidade da aplicação é mantida através de testes automatizados implementados com Jest. Essa prática auxilia na detecção precoce de problemas e assegura que alterações no código não resultem em regressões indesejadas. Os testes são uma parte essencial do processo de desenvolvimento, garantindo um código confiável e de alta qualidade.
 
-# watch mode
-$ npm run start:dev
+## Autenticação JWT
 
-# production mode
-$ npm run start:prod
-```
+A API RESTful utiliza autenticação JWT para controlar o acesso às suas rotas privadas. A implementação do JWT oferece uma solução segura e eficiente para gerenciar a autenticação e autorização de usuários na aplicação, garantindo a integridade e segurança das informações.
 
-## Test
+## Como Iniciar
 
-```bash
-# unit tests
-$ npm run test
+1. **Clone o repositório:** `git clone https://github.com/joa7b/juntai-nestjs.git`.
+2. **Instale as dependências:** `npm install`.
+3. **Configure as variáveis de ambiente, se necessário.**
+4. **Iniciando serviços definidos no docker-compose**  `docker-compose up -d`.
+5. **Execute as migrações do banco de dados:** `npm run db:setup` e `npm run db:setup:dev`.
+6. **Execute as seeds para popular o banco de dados** `npm run db:seed:all`.
+7. **Inicie o servidor:** `npm run start`.
 
-# e2e tests
-$ npm run test:e2e
+## Contato
 
-# test coverage
-$ npm run test:cov
-```
+Para mais informações ou suporte, entre em contato:
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+- Email: joa7@protonmail.com
