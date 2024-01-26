@@ -29,9 +29,10 @@ A API RESTful utiliza autenticação JWT para controlar o acesso às suas rotas 
 2. **Instale as dependências:** `npm install`.
 3. **Configure as variáveis de ambiente, se necessário.**
 4. **Iniciando serviços definidos no docker-compose**  `docker-compose up -d`.
-5. **Execute as migrações do banco de dados:** `npm run db:setup` e `npm run db:setup:dev`.
+5. **Execute as migrações do banco de dados:** `npm run db:setup` e `npm run db:setup:test`.
 6. **Execute as seeds para popular o banco de dados** `npm run db:seed:all`.
-7. **Inicie o servidor:** `npm run start`.
+7. **Execute os testes automatizados** `npm run test`.
+8. **Inicie o servidor:** `npm run start`.
 
 ## Contato
 
