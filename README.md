@@ -6,7 +6,7 @@ A Juntai API é uma aplicação robusta construída com Node.js, utilizando o fr
 
 ## Tecnologias Utilizadas
 
-- **Node.js**
+- **Node.js 18.x.x**
 - **NestJS**
 - **MySQL**
 - **Sequelize**
