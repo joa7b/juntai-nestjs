@@ -40,7 +40,7 @@ module.exports = {
         allowNull: false
       },
       status: {
-        type: Sequelize.ENUM('pending', 'paid'),
+        type: Sequelize.ENUM('pending', 'paid', 'not_paid'),
         allowNull: false,
         defaultValue: 'pending'
       },

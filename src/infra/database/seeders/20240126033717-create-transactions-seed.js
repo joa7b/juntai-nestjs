@@ -24,7 +24,8 @@ module.exports = {
         user_id: 1,
         status: 'pending',
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 2',
@@ -36,7 +37,8 @@ module.exports = {
         status: 'paid',
         paid_at: now,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 3',
@@ -45,10 +47,11 @@ module.exports = {
         kind: 'expense',
         category: 'category 1',
         user_id: 1,
-        status: 'paid',
+        status: 'not_paid',
         paid_at: now,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 4',
@@ -60,7 +63,8 @@ module.exports = {
         status: 'paid',
         paid_at: now,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 5',
@@ -72,7 +76,8 @@ module.exports = {
         status: 'paid',
         paid_at: now,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 6',
@@ -84,7 +89,8 @@ module.exports = {
         status: 'paid',
         paid_at: now,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 7',
@@ -93,10 +99,11 @@ module.exports = {
         kind: 'expense',
         category: 'category 1',
         user_id: 1,
-        status: 'paid',
+        status: 'not_paid',
         paid_at: now,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 8',
@@ -108,7 +115,8 @@ module.exports = {
         status: 'pending',
         paid_at: null,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 9',
@@ -120,7 +128,8 @@ module.exports = {
         status: 'pending',
         paid_at: null,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 10',
@@ -132,7 +141,8 @@ module.exports = {
         status: 'pending',
         paid_at: null,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 11',
@@ -144,7 +154,8 @@ module.exports = {
         status: 'pending',
         paid_at: null,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 12',
@@ -156,7 +167,8 @@ module.exports = {
         status: 'paid',
         paid_at: now,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 13',
@@ -168,7 +180,8 @@ module.exports = {
         status: 'paid',
         paid_at: now,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 14',
@@ -180,7 +193,8 @@ module.exports = {
         status: 'paid',
         paid_at: now,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       },
       {
         name: 'Transaction 15',
@@ -192,7 +206,8 @@ module.exports = {
         status: 'pending',
         paid_at: null,
         created_at: now,
-        updated_at: now
+        updated_at: now,
+        deleted_at: null
       }
     ]);
   },
