@@ -20,6 +20,7 @@ import { TransactionsService } from './transactions.service';
 
 import { CreateTransactionDto } from './dto/create-transaction.dto';
 import { UpdateQueryParamsDto } from './dto/update-query-params.dto';
+import { UpdateTransactionDto } from './dto/update-transaction.dto';
 
 @Controller('api/transactions')
 export class TransactionsController {
@@ -42,7 +43,7 @@ export class TransactionsController {
   update(
     @CurrentUser() user: any,
     @Param() query: UpdateQueryParamsDto,
-    @Body() createTransactionDto: CreateTransactionDto
+    @Body() createTransactionDto: UpdateTransactionDto
   ) {
     try {
       const params = {
@@ -67,7 +68,7 @@ export class TransactionsController {
   }
 
   @Get(':id')
-  findOne(@CurrentUser() user: any, @Param('id') id: string) {
+  findOne(@CurrentUser() user: any, @Param('id') id: number) {
     try {
       return this.transactionsService.findOne(+id, 1);
     } catch (error) {
@@ -77,7 +78,7 @@ export class TransactionsController {
   }
 
   @Delete(':id')
-  remove(@CurrentUser() user: any, @Param('id') id: string) {
+  remove(@CurrentUser() user: any, @Param('id') id: number) {
     try {
       return this.transactionsService.remove(+id, 1);
     } catch (error) {

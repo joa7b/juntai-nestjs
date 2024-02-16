@@ -71,9 +71,11 @@ describe('TransactionsController', () => {
       });
 
       it('should update a transaction', async () => {
-        const transaction = await controller.update({id: 1}, {id: 1}, transactionParams);
+        const transaction = await controller.create({id: 1}, transactionParams);
+        await controller.update({id: 1}, {id: transaction.id}, {status: 'paid'});
 
         expect(transaction).toBeDefined();
+        expect(transaction.status).toBeDefined();
       });
     });
 
@@ -96,7 +98,8 @@ describe('TransactionsController', () => {
       });
 
       it('should return a transaction', async () => {
-        const transaction = await controller.findOne({id: 1}, '1');
+        const transactionCreated = await controller.create({id: 1}, transactionParams);
+        const transaction = await controller.findOne({id: 1}, transactionCreated.id);
 
         expect(transaction).toBeDefined();
         expect(transaction.id).toBeDefined();
@@ -109,7 +112,8 @@ describe('TransactionsController', () => {
       });
 
       it('should delete a transaction', async () => {
-        const transaction = await controller.remove({id: 1}, '1');
+        const transactionCreated = await controller.create({id: 1}, transactionParams);
+        const transaction = await controller.remove({id: 1}, transactionCreated.id);
 
         expect(transaction).toBeDefined();
       });
